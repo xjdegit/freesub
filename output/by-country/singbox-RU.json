@@ -11,20 +11,20 @@
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
+        "server_name": "itsallproxy.quattro-tech.ru",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "185.125.100.76",
+      "server": "176.124.220.173",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -32,7 +32,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/trade/game/movies",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
