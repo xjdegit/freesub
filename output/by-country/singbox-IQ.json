@@ -4,23 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "193.56.135.212",
-      "server_port": 9543,
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
-      "flow": "xtls-rprx-vision",
+      "server": "188.114.96.3",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "storage.yandexcloud.net",
+        "server_name": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcde"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/N61UxT346epoPVmA9xFM6H00?ed=2560",
+        "headers": {
+          "Host": "6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev"
         }
       }
     },
