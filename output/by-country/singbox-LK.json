@@ -5,13 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "176.96.131.251",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "server": "cdn.zoom.us",
+      "server_port": 80,
+      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "cloud.ghostdev.lk"
+        }
       }
     },
     {
@@ -19,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
