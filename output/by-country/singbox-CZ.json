@@ -5,26 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe",
-      "server": "lbeiggdz.smart-cats.ru",
-      "server_port": 443,
-      "uuid": "8325bd97-b77c-4917-acaa-2446e9e8cc03",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "172.67.130.187",
+      "server_port": 2083,
+      "uuid": "2b8738de-1af5-4267-b101-c05707769ed4",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "fans.liverpool.qzz.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY",
-          "short_id": "79651ae525860543"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "haknewhpjmv"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "fans.liverpool.qzz.io"
+        }
       }
     },
     {
@@ -32,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
